@@ -1,10 +1,15 @@
 
 package ejemplosmetodospredefinidos;
 
+import java.util.Scanner;
+
 public class EjemplosClaseCharacter {
  
     public static void main(String[] args) {
-        char caracter = 'A';
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingresa una letra");
+        char caracter = scanner.next().charAt(0);
         
         // Verificar si un carácter es una letra
         boolean esLetra = Character.isLetter(caracter);
@@ -35,5 +40,7 @@ public class EjemplosClaseCharacter {
         System.out.println("Convertir a minúscula: " + aMinuscula);
         System.out.println("Convertir a mayúscula: " + aMayuscula);
         System.out.println("Tipo de carácter: " + tipo);
+
+        scanner.close();
     }
 }
