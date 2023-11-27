@@ -5,6 +5,7 @@ public class EjemplosClaseCharacter {
  
     public static void main(String[] args) {
         char caracter = 'A';
+        //Muy bine pedro
         
         // Verificar si un carácter es una letra
         boolean esLetra = Character.isLetter(caracter);
@@ -23,6 +24,7 @@ public class EjemplosClaseCharacter {
 
         // Convertir un carácter a mayúscula
         char aMayuscula = Character.toUpperCase(caracter);
+        
 
         // Obtener el tipo de un carácter
         byte tipo = (byte) Character.getType(caracter);
